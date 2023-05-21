@@ -428,14 +428,16 @@ textarea{
     color: rgb(255, 255, 255);
 }
 .pie-de-pagina .grupo-2 small{
-    font-size:15px;
+    font-size:16px;
 }
 
 
 
 /*SIEMPRE AL FINAL - ORDENADO - PARA NO ROMPER NADA*/
 
+
 @media(max-width:1024PX){
+    /*HOJA DE CONTACTO*/
     header{
         justify-content: space-around;
         height: fit-content
@@ -453,6 +455,7 @@ textarea{
 
 
 @media(max-width:768px){
+    /*HOJA DE CONTACTO*/
     header{
         flex-direction: column;
     }
@@ -466,11 +469,55 @@ textarea{
         display: flex;
         align-content: center;
         align-items: center;
+        margin-right: 10px;
     }
     .pie-de-pagina .grupo-1{
+        margin: auto;
+        align-items: center;
+    }
+    .pie-de-pagina .grupo-1 .box figure img{
         margin-left: 10px;
     }
 }
 
 @media(max-width:425px){
+    /*HOJA DE CONTACTO*/
+    .form{
+        width: 50px;
+    }
+    .pie-de-pagina .grupo-1 .box p{
+        display:none;
+    }
+    .pie-de-pagina .grupo-1 .box h2{
+        display:none;
+    }
+    .pie-de-pagina .grupo-1 .box figure img{
+        display:none;
+    }
+    .pie-de-pagina .grupo-1 .red-social{
+        margin-right:85px;
+    }
+}
+
+/*DESDE ACA QUEDA MAL EL MENU/NAV */
+
+@media(max-width:375px){
+    /*HOJA DE CONTACTO*/
+    nav{
+        flex-direction: column;
+        align-items: center;
+    }
+    .pie-de-pagina .grupo-1 .red-social{
+        margin-right:95px;
+}
+}
+
+@media(max-width:320px){
+    .pie-de-pagina .grupo-1 .red-social{
+        display:none;
+}
+nav a{
+    flex-direction: column;
+    align-items: center;
+}
 }
