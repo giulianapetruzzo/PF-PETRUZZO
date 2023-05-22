@@ -455,7 +455,7 @@ textarea{
 
 
 @media(max-width:768px){
-    /*HOJA DE CONTACTO*/
+    /*HOJA DE CONTACTO - este esta ok*/
     header{
         flex-direction: column;
     }
@@ -480,15 +480,12 @@ textarea{
     }
 }
 
+/*HOJA DE CONTACTO - no funciona form ni desaparece pie de pag*/
 @media(max-width:425px){
-    /*HOJA DE CONTACTO*/
-    .form{
-        width: 50px;
-    }
-    .pie-de-pagina .grupo-1 .box p{
+    .box p{
         display:none;
     }
-    .pie-de-pagina .grupo-1 .box h2{
+    .box h2{
         display:none;
     }
     .pie-de-pagina .grupo-1 .box figure img{
@@ -497,27 +494,34 @@ textarea{
     .pie-de-pagina .grupo-1 .red-social{
         margin-right:85px;
     }
+    form{
+        width: 250px;
+    }
 }
 
-/*DESDE ACA QUEDA MAL EL MENU/NAV */
-
+/*HOJA DE CONTACTO - ACA NO FUNCIONA NAV*/ 
 @media(max-width:375px){
-    /*HOJA DE CONTACTO*/
-    nav{
+    .pie-de-pagina .grupo-1 .red-social{
+        margin-right:95px;
+    }
+    nav a{
+        display: flex;
         flex-direction: column;
         align-items: center;
     }
-    .pie-de-pagina .grupo-1 .red-social{
-        margin-right:95px;
-}
+    form{
+        width: 250px;
+    }
 }
 
+    /*HOJA DE CONTACTO - ESTE FUNCIONA OK*/
 @media(max-width:320px){
     .pie-de-pagina .grupo-1 .red-social{
         display:none;
-}
-nav a{
-    flex-direction: column;
-    align-items: center;
+}   
+    nav a{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
 }
 }
