@@ -61,18 +61,12 @@ h1{
     margin-top: 20px;
     padding: 30px;
 }
-p{
-    /*width:50%;*/
-    /*bottom:10px;*/
-    text-align:center;
-    /*align-content: center;*/
+.historia{
+    text-align: center;
     color: aliceblue;
-    margin-top:40px;
-    margin-bottom:40px;
-    padding:20px;
-    font-size: 17px;
-    display: flex;
-    /*display:inline-flex;*/
+    margin-top: 20px;
+    padding: 30px;
+    margin: auto;
 }
 
 .galeria{
@@ -288,6 +282,15 @@ h3{
     text-align: center;
 }
 /*HOJA CLASES*/
+.container{
+    width:90%;
+    padding: 30px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    align-items: center;
+    align-content: center;
+}
+
 .clases{
     width: 450px;
     margin: auto;
@@ -437,26 +440,25 @@ textarea{
 
 
 @media(max-width:1024PX){
-    /*HOJA DE CONTACTO*/
-    header{
-        justify-content: space-around;
-        height: fit-content
-    };
+    .integrantes{
+        position: sticky;
+        align-items: center;
+        align-content: center;
     }
-    .galeria{
-        display: flex;
+    main{
+        width: 90%;
+        height: 90%;
+        align-items: center;
+        align-content: center;
     }
-    p{
-        flex-direction: column;
-    }
-    div .box p{
-        margin-top: 1px;
-    }
-    
-/*HOJA DE CONTACTO - este esta ok*/
+
+
+/* este esta ok*/
 @media(max-width:768px){
     header{
         flex-direction: column;
+        box-sizing: content-box;
+        height: fit-content;
     }
     nav a{
         color: aliceblue;
@@ -477,8 +479,12 @@ textarea{
     .pie-de-pagina .grupo-1 .box figure img{
         margin-left: 10px;
     }
+    .clases{
+        flex-direction: column;
+    }
 }
-/*HOJA DE CONTACTO - ESTA OK*/
+
+/* ESTA OK*/
 @media(max-width:670px){
     body .background-image{
         height:100vh;
@@ -487,8 +493,8 @@ textarea{
         width:90% ;
         align-items: center;
     }
-    .pie-de-pagina .grupo-1 .box figure img{
-        display:none;
+    .pie-de-pagina .grupo-1 .box p{
+        display: none;
     }
     .pie-de-pagina .grupo-1 .box h2{
         display: none;
@@ -500,23 +506,29 @@ textarea{
         display: none;
     }
     .pie-de-pagina .grupo-1 .red-social{
-        display:none;
+        position: sticky;
+    }
+    .pie-de-pagina .grupo-1 .box figure img{
+        position: sticky;
     }
 }
 
-/*HOJA DE CONTACTO- esta ok*/
+/*esta ok*/
 @media(max-width:398px){
     nav a{
         display: flex;
         flex-direction: column;
         align-items: center;
     }
+    .pie-de-pagina .grupo-1 .box figure img{
+        display: none;
+    }
     form{
         width: 90%;
     }
 }
 
-/*HOJA DE CONTACTO - esta ok*/
+/* esta ok*/
 @media(max-width:351px){
     nav a{
         display: flex;
@@ -530,9 +542,9 @@ textarea{
     .pie-de-pagina .grupo-1 .box p{
         display: none;
     }
-}*/
+}
 
-    /*HOJA DE CONTACTO - esta ok*/
+    /* esta ok*/
 @media(max-width:320px){
     .pie-de-pagina .grupo-1 .red-social{
         display:none;
