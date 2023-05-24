@@ -66,7 +66,7 @@ h1{
     color: aliceblue;
     margin-top: 20px;
     padding: 30px;
-    margin: auto;
+    margin-top: 70px;
 }
 
 .galeria{
@@ -390,6 +390,7 @@ textarea{
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 50px;
     padding:45px 0px;
+    justify-items: center;
 }
 .pie-de-pagina .grupo-1 .box figure{
     width: 100%;
