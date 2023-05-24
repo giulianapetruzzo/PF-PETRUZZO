@@ -63,6 +63,7 @@ h1{
 }
 .historia{
     text-align: center;
+    justify-content: center;
     color: aliceblue;
     margin-top: 20px;
     padding: 30px;
@@ -81,9 +82,9 @@ h1{
 }
 
 div.galeria img{
-    width: 350px;
-    height: auto;
-    /*object-fit:cover;*/
+    width: 320px;
+    height: 300px;
+    object-fit:cover;
     filter: brightness(78%);
     gap: 5px;
 }
@@ -206,9 +207,9 @@ h3{
     text-align: center;
 }
 .nov31{
-    background-size: contain;
-    flex-direction: row;
-    display: flex;
+    background-size:contain;
+    flex-direction:row;
+    display:flex;
     margin-top: 30px;
     margin-block-end: 15px;
     gap: 30px;
@@ -289,6 +290,16 @@ h3{
     margin-bottom: 50px;
     align-items: center;
     align-content: center;
+}
+.video{
+    padding: 20px;
+    width:70%;
+    margin-left:60px;
+    display: flex;
+    align-items: center;
+    align-content:space-between;
+    object-fit: cover;
+    box-shadow: 0 4px 8px 0 rgb(214, 85, 5),0 6px 20px 0 rgb(122, 1255, 186);
 }
 
 .clases{
@@ -441,7 +452,6 @@ textarea{
 }
 
 
-
 /*SIEMPRE AL FINAL - ORDENADO - PARA NO ROMPER NADA*/
 
 
@@ -509,6 +519,9 @@ textarea{
         width:90% ;
         align-items: center;
     }
+    #box3{
+        grid-column: 2;
+    }
     .pie-de-pagina .grupo-1 .box p{
         display: none;
     }
@@ -523,6 +536,7 @@ textarea{
     }
     .pie-de-pagina .grupo-1 .red-social{
         position: sticky;
+        justify-content: center;
     }
     .pie-de-pagina .grupo-1 .box figure img{
         position: sticky;
