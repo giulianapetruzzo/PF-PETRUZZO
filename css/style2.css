@@ -292,12 +292,12 @@ h3{
     align-content: center;
 }
 .video{
+    margin: auto;
+    margin-top: 20px;
     padding: 20px;
     width:70%;
-    margin-left:60px;
     display: flex;
     align-items: center;
-    align-content:space-between;
     object-fit: cover;
     box-shadow: 0 4px 8px 0 rgb(214, 85, 5),0 6px 20px 0 rgb(122, 1255, 186);
 }
@@ -311,6 +311,7 @@ h3{
     align-content: center;
     display: inline;
     padding: 10px;
+    display: contents;
 }
 .sabados{
     background-size: contain;
@@ -326,11 +327,12 @@ h3{
     padding-right: 10px;
     align-items: center;
 }
-.sabados div{
+/*.sabados div{
+    width: 500px;
     box-shadow: 0 4px 8px 0 rgb(203, 214, 5),0 6px 20px 0 rgb(122, 1255, 186);
-    padding-inline: 58px;
+    padding-inline: 60px;
     text-align: center;
-}
+}*/
 .sabados2{
     background-size: contain;
     flex-direction: row;
@@ -346,8 +348,9 @@ h3{
     align-items: center;
 }
 .sabados2 div{
+    width: 500px;
     box-shadow: 0 4px 8px 0 rgb(203, 214, 5),0 6px 20px 0 rgb(122, 1255, 186);
-    padding-inline: 58px;
+    padding-inline: 60px;
     text-align: center; 
 }
 
@@ -464,10 +467,12 @@ textarea{
     main{
         width: 90%;
         height: 90%;
-        align-items: center;
-        align-content: center;
+        display: contents;
     }
-}
+    .video{
+        display: flex;
+        flex-direction: column;
+    }
 
     @media(max-width:650px){
         .pie-de-pagina .grupo-1 .box figure img{
@@ -510,6 +515,7 @@ textarea{
     }
 }
 
+
 /* ESTA OK*/
 @media(max-width:670px){
     body .background-image{
@@ -522,9 +528,9 @@ textarea{
     #box3{
         grid-column: 2;
     }
-    .pie-de-pagina .grupo-1 .box p{
+    /*.pie-de-pagina .grupo-1 .box p{
         display: none;
-    }
+    }*/
     .pie-de-pagina .grupo-1 .box h2{
         display: none;
     }
@@ -535,13 +541,20 @@ textarea{
         display: none;
     }
     .pie-de-pagina .grupo-1 .red-social{
-        position: sticky;
-        justify-content: center;
+        display: none;
+        /*position: sticky;
+        justify-content: center;*/
     }
     .pie-de-pagina .grupo-1 .box figure img{
         position: sticky;
     }
 }
+@media (max-width:425px) {
+    .video{
+        display: none;
+    }    
+}
+
 
 /*esta ok*/
 @media(max-width:398px){
@@ -558,6 +571,11 @@ textarea{
     }
 }
 
+@media (max-width:375px) {
+    .pie-de-pagina .grupo-1 .box p{
+        display: none;
+    } 
+}
 /* esta ok*/
 @media(max-width:351px){
     nav a{
