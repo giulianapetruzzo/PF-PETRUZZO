@@ -1,18 +1,23 @@
 @media(max-width:425px){
-    footer{    
-        .grupo-1 {    
-            .box figure { 
-                display:none;   
-                img {
+    footer{
+        .grupo-1{
+            figure{
+                img{
                     display:none;
                 }
-                .box h2 {
+            }
+            .box{
+                h2{
                     display: none;
-                    .box p {
-                        display:none;
-                    }
+                }
+                p{
+                    display: none;
                 }
             }
         }
     }
+    .clases{
+        flex-direction: column;
+    }
 }
+    

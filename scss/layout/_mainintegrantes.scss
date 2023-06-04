@@ -1,0 +1,31 @@
+.equipo{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+
+    .integrantes{
+        margin: 30px 30px;
+        align-content: space-between;
+        box-shadow: 0 4px 8px 0 rgb(122, 255, 186),0 6px 20px 0 rgb(122, 1255, 186);
+        width: 300px;
+        display:inline-flexbox;
+        float: left;
+        align-items: center;
+        text-align: center;
+        align-content: center;
+        .foto{
+            img{
+        width: 100%;
+        height: auto;
+        gap: 5px;
+        object-fit:cover;
+        }
+        }
+        p{
+        color: beige;
+        }
+    }
+
+}

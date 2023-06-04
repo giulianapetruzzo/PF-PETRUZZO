@@ -1,0 +1,39 @@
+.eventos{ 
+    width: 450px;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom:30px;
+    align-items: center;
+    align-content: center;
+    display: inline;
+    padding: 10px;
+    display: contents;
+    .fechas{
+        background-size: contain;
+        flex-direction: row;
+        display: flex;
+        margin-top: 30px;
+        margin-block-end: 15px;
+        gap: 30px;
+        justify-content: center;
+        overflow: hidden;
+        flex-wrap: wrap;
+        padding-left: 10px;
+        padding-right: 10px;
+        align-items: center;
+    }
+    .fechas div{
+        width: 500px;
+        box-shadow: 0 4px 8px 0 rgb(203, 214, 5),0 6px 20px 0 rgb(122, 1255, 186);
+        padding-inline: 60px;
+        text-align: center;
+        h2:hover{
+            color:cornsilk;
+            font-size: larger;
+        }
+        h3:hover{
+            color:cornsilk;
+            font-size: larger;
+        }
+    }
+}
