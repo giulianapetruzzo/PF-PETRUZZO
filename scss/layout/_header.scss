@@ -1,0 +1,29 @@
+header{
+    display:flex;
+    height:90px;
+    background-color:rgba(245, 245, 220, 0.503);
+    justify-content:space-between;
+    align-items:center;
+    padding:30px;
+    nav {
+        a{
+            text-decoration: none;
+            color: black;
+            font-size: medium;
+        &:hover{
+            color: rgb(249, 8, 8);
+            font-size: larger;
+            font-weight: bold;
+            }
+        }
+    .logotipo {
+        display: flex;
+        align-items: center;
+        color: black;
+    }
+    .logotipo img {
+        margin-right: 10px;
+        margin-bottom: 10px;
+    }
+}
+}

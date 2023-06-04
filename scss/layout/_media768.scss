@@ -1,0 +1,33 @@
+@media(max-width:768px){
+    header{
+        flex-direction: column;
+        box-sizing: content-box;
+        height:fit-content;
+    }
+    nav a{
+        color: aliceblue;
+    }
+    h1{
+        margin-top: 20px;
+    }
+    .pie-de-pagina .grupo-1 .red-social{
+        display: flex;
+        align-content: center;
+        align-items: center;
+        margin-right: 10px;
+    }
+    .pie-de-pagina .grupo-1{
+        margin: auto;
+        align-items: center;
+    }
+    .pie-de-pagina .grupo-1 .box figure img{
+        margin-left: 10px;
+    }
+    .clases{
+        flex-direction: column;
+    }
+
+    footer .red-social a {
+        margin: right 0;
+    }
+}
