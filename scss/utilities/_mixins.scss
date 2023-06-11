@@ -1,1 +1,10 @@
+/*son bloques de propiedades y valores - hay que nombrarlos*/
 
+@mixin flex($direction,$wrap,$content,$items,$gap){
+    display: flex;
+    flex-direction:$direction ;
+    flex-wrap:$wrap ;
+    justify-content:$content;
+    align-items:$items;
+    gap: $gap;
+}

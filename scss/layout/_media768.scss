@@ -1,34 +1,107 @@
-@media(max-width:768px){
-    header{
-        flex-direction: column;
-        box-sizing: content-box;
-        height:fit-content;
-    }
-    nav a{
-        color: aliceblue;
-    }
-    h1{
-        margin-top: 20px;
-    }
-    
-    .pie-de-pagina .grupo-1 .red-social{
+@media(max-width:768px) {
+    header {
+        top: 0;
+        left: 0;
+        position: absolute;
+        width: 70px;
+        height: 100vh;
         display: flex;
-        align-content: center;
-        align-items: center;
-        margin-right: 10px;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-content: flex-start;
+        justify-content: flex-start;
+        background-color: rgba(245, 245, 245, 0.941);
+
+        /*flex-direction: column;
+        box-sizing: content-box;
+        height:fit-content;*/
+
+        div {
+            img {
+                display: none;
+            }
+        }
     }
-    .pie-de-pagina .grupo-1{
-        margin: auto;
-        align-items: center;
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-content: flex-start;
+        justify-content: flex-start;
+
+        ul {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            align-items: flex-start;
+            justify-content: flex-start;
+        }
     }
-    .pie-de-pagina .grupo-1 .box figure img{
-        margin-left: 10px;
+
+    nav a {
+        color: rgb(0, 0, 0);
+        margin: 0;
     }
-    .clases{
+
+    h1 {
+        margin-top: 20px;
+        margin-left: 200px;
+    }
+
+    .gallery {
+        margin-left: 200px;
+
+        .pie-de-foto {
+            margin-right: 150px;
+        }
+    }
+
+    p {
+        margin-left: 200px;
+    }
+
+    .sabados2 {
+        margin-left: 200px;
+    }
+
+    video {
+        display: none;
+    }
+
+    .slider {
+        display: none;
+    }
+
+    footer {
+        .grupo-1 {
+            margin: auto;
+            align-items: center;
+
+            .red-social {
+                display: flex;
+                align-content: center;
+                align-items: center;
+                margin-right: 10px;
+            }
+            .box{
+                p{
+                    margin: auto;
+                    align-items: center;
+                    align-content:center ;
+                }
+            }
+                }
+            }
+        }
+    
+
+
+    .clases {
         flex-direction: column;
     }
 
-    footer .red-social a {
-        margin: right 0;
+    .fechas {
+        width: 70%;
     }
-}
+

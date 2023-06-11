@@ -9,18 +9,14 @@
     padding: 10px;
     display: contents;
     .sabados2{
+        @include flex(row,wrap,center,center,30px);
         background-size: contain;
-        flex-direction: row;
-        display: flex;
         margin-top: 30px;
         margin-block-end: 15px;
-        gap: 30px;
-        justify-content: center;
         overflow: hidden;
-        flex-wrap: wrap;
         padding-left: 10px;
         padding-right: 10px;
-        align-items: center;
+        
     }
     .sabados2 div{
         width: 500px;
@@ -38,12 +34,11 @@
     }
 
     .video{
+        @include flex(row,no-wrap,center,center,10px);
         margin: auto;
         margin-top: 20px;
         padding: 20px;
         width:70%;
-        display: flex;
-        align-items: center;
         object-fit: cover;
         box-shadow: 0 4px 8px 0 rgb(214, 85, 5),0 6px 20px 0 rgb(122, 1255, 186);
     }

@@ -1,9 +1,10 @@
 .equipo{
-    display: flex;
+    @include flex(row,wrap,center,center,5px);
+    /*display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-content: center;
-    justify-content: center;
+    justify-content: center;*/
 
     .integrantes{
         margin: 30px 30px;

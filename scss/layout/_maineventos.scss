@@ -1,3 +1,32 @@
+.slider{
+    width: 99vw;
+    height: auto;
+    margin: auto;
+    overflow: hidden;
+    .slide-track{
+        display: flex;
+        animation: scroll 40s linear infinite;
+        -webkit-animation: scroll 40s linear infinite;
+        width: calc(200px * 14);
+        .slide{
+            width: 200px;
+            img{
+                width: 100%;
+            }
+        }
+    }
+    @keyframes scroll{
+        0%{
+            -webkit-transform: translateX(0);
+            transform:translateX(0);
+        }
+        100%{
+            -webkit-transform:translateX(calc(-200px * 7));
+            transform:translateX(calc(-200px * 7));
+        }
+        
+    }
+}
 .eventos{ 
     width: 450px;
     margin: auto;
@@ -8,19 +37,16 @@
     display: inline;
     padding: 10px;
     display: contents;
+
     .fechas{
+        @include flex(row,no-wrap,space-between,center,30px);
         background-size: contain;
-        flex-direction: row;
-        display: flex;
         margin-top: 30px;
         margin-block-end: 15px;
-        gap: 30px;
-        justify-content: center;
         overflow: hidden;
-        flex-wrap: wrap;
+        flex-wrap:no-wrap;
         padding-left: 10px;
         padding-right: 10px;
-        align-items: center;
     }
     .fechas div{
         width: 500px;

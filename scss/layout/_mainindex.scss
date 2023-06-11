@@ -1,55 +1,60 @@
-body{
-    background-image: url(https://images.unsplash.com/photo-1550275994-cdc89cd1948f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8YmFja2dyb3VuZCUyMGRhbnphfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60);
+body {
+    /*background-image: url(https://images.unsplash.com/photo-1550275994-cdc89cd1948f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8YmFja2dyb3VuZCUyMGRhbnphfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60);*/
+    background-image: $background-image3;
     background-size: 100vw 100vh;
     background-attachment: fixed;
     background-repeat: no-repeat;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 
-    main{
+    main {
         box-sizing: content-box;
 
-        h1{
+        h1 {
             text-align: center;
             color: aliceblue;
             margin-top: 20px;
             padding: 30px;
         }
-    .gallery{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        align-content: center;
-        justify-content: center;
-        align-items: center;
-        .galeria {
-            margin: 7px 7px 7px 7px;
-            box-shadow: 0 4px 8px 0 lightsalmon, 0 6px 20px 0 rgb(0, 0, 0);
-            width: 350px;
-            display:flex;
-            float: left;
-            align-items: center;
-            justify-content: space-around;
-            padding: 5px;
 
-            &:hover {
-                border: auto solid lightblue;
-            }
-            img {
-                width: 320px;
-                height: 300px;
-                object-fit: cover;
-                filter: brightness(78%);
+        .gallery {
+            @include flex(row,wrap,center,center,15px);
+            flex-direction: row;
+            flex-wrap: wrap;
+
+
+            .galeria {
+                margin: 7px 7px 7px 7px;
+                box-shadow: 0 4px 8px 0 lightsalmon, 0 6px 20px 0 rgb(0, 0, 0);
+                width: 350px;
+                display: flex;
+                float: left;
+                align-items: center;
+                justify-content: space-around;
+                padding: 5px;
+
                 &:hover {
-                    filter: brightness(100%);
+                    border: auto solid lightblue;
+                }
+
+                img {
+                    width: 320px;
+                    height: 300px;
+                    object-fit: cover;
+                    filter: brightness(78%);
+
+                    &:hover {
+                        filter: brightness(100%);
+                    }
+                }
+
+                .pie-de-foto {
+                    color: aliceblue;
+                    position: absolute;
                 }
             }
-            .pie-de-foto {
-                color: aliceblue;
-                position: absolute;
-            }
         }
-    }
-    .historia{
+
+        .historia {
             display: inline-grid;
             text-align: center;
             justify-content: center;
