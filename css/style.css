@@ -108,6 +108,8 @@ body {
       padding: 30px;
       margin-top: 70px;
       font-size: 20px; }
+      body main .historia strong {
+        color: #ef3838; }
 
 .clases {
   width: 450px;
@@ -119,6 +121,18 @@ body {
   display: inline;
   padding: 10px;
   display: contents; }
+  .clases div h1 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: no-wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10pxs;
+    font-size: 70px;
+    text-align: center;
+    color: aliceblue;
+    margin-top: 20px;
+    padding: 30px; }
   .clases .sabados2 {
     display: flex;
     flex-direction: row;
@@ -139,7 +153,8 @@ body {
     text-align: center; }
     .clases .sabados2 div h2:hover {
       color: cornsilk;
-      font-size: larger; }
+      font-size: larger;
+      font-family: fantasy; }
     .clases .sabados2 div h3:hover {
       color: cornsilk;
       font-size: larger; }
@@ -169,23 +184,24 @@ body {
     flex-wrap: wrap;
     align-content: center;
     justify-content: center;*/ }
-  .equipo .integrantes {
-    margin: 30px 30px;
-    align-content: space-between;
-    box-shadow: 0 4px 8px 0 #7affba, 0 6px 20px 0 #7affba;
-    width: 300px;
-    display: inline-flexbox;
-    float: left;
-    align-items: center;
-    text-align: center;
-    align-content: center; }
-    .equipo .integrantes .foto img {
-      width: 100%;
-      height: auto;
-      gap: 5px;
-      object-fit: cover; }
-    .equipo .integrantes p {
-      color: beige; }
+
+.integrantes {
+  margin: 30px 30px;
+  align-content: space-between;
+  box-shadow: 0 4px 8px 0 #7affba, 0 6px 20px 0 #7affba;
+  width: 300px;
+  display: inline-flexbox;
+  float: left;
+  align-items: center;
+  text-align: center;
+  align-content: center; }
+  .integrantes .foto img {
+    width: 100%;
+    height: auto;
+    gap: 5px;
+    object-fit: cover; }
+  .integrantes p {
+    color: beige; }
 
 .slider {
   width: 99vw;
@@ -220,6 +236,18 @@ body {
   display: inline;
   padding: 10px;
   display: contents; }
+  .eventos div h1 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: no-wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10pxs;
+    font-size: 70px;
+    text-align: center;
+    color: aliceblue;
+    margin-top: 20px;
+    padding: 30px; }
   .eventos .fechas {
     display: flex;
     flex-direction: row;
@@ -248,6 +276,7 @@ body {
 
 form {
   width: 450px;
+  height: 100vh;
   margin: auto;
   background: rgba(0, 0, 0, 0.4);
   padding: 10px 20px;

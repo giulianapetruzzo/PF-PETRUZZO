@@ -37,6 +37,16 @@
     display: inline;
     padding: 10px;
     display: contents;
+    div{
+        h1{
+            @include flex(row,no-wrap,center,center,10pxs);
+            font-size:70px;
+            text-align: center;
+            color: aliceblue;
+            margin-top: 20px;
+            padding: 30px; 
+        }
+    }
 
     .fechas{
         @include flex(row,no-wrap,space-between,center,30px);

@@ -1,3 +1,4 @@
+
 .clases{
     width: 450px;
     margin: auto;
@@ -8,6 +9,16 @@
     display: inline;
     padding: 10px;
     display: contents;
+    div{
+        h1{
+            @include flex(row,no-wrap,center,center,10pxs);
+            font-size:70px;
+            text-align: center;
+            color: aliceblue;
+            margin-top: 20px;
+            padding: 30px; 
+        }
+    }
     .sabados2{
         @include flex(row,wrap,center,center,30px);
         background-size: contain;
@@ -26,6 +37,7 @@
         h2:hover{
             color:cornsilk;
             font-size: larger;
+            font-family: fantasy;
         }
         h3:hover{
             color:cornsilk;
