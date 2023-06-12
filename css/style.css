@@ -1,8 +1,10 @@
+@charset "UTF-8";
 /*en el caso de contar con variables, funciones, mixins - deben ir antes del resto de las paginas*/
 /*son bloques de propiedades y valores - hay que nombrarlos*/
 * {
   margin: 0;
   padding: 0;
+  text-decoration: none;
   box-sizing: border-box;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; }
 
@@ -26,18 +28,25 @@ header {
   justify-content: space-between;
   padding: 0 40px;
   border-radius: 0 0 10px 10px;
-  margin: auto;
+  margin: 0 auto;
   /*padding:30px;*/ }
   header nav ul {
     display: flex; }
     header nav ul a {
-      text-decoration: none;
-      color: black;
+      display: block;
+      color: #212526;
       margin: 0 2px;
-      font-size: medium;
+      font-weight: 600;
       padding: 8px 18px;
       transition: 0.2s;
-      border-radius: 30px; }
+      border-radius: 30px;
+      /*text-decoration: none;
+                    color: black;
+                    margin: 0 2px;
+                    font-size: medium;
+                    padding: 8px 18px;
+                    transition: 0.2s;
+                    border-radius: 30px;*/ }
       header nav ul a:hover {
         color: #f90808;
         font-size: larger;
@@ -49,21 +58,20 @@ header {
   header .logotipo img {
     margin-right: 10px;
     margin-bottom: 10px; }
-
-.hamburguesa {
-  display: none;
-  height: fit-content;
-  cursor: pointer;
-  padding: 3px 8px;
-  border-radius: 5px;
-  transition: 0.2s; }
-  .hamburguesa:hover {
-    background: #f6f4ff; }
-  .hamburguesa div {
-    width: 30px;
-    height: 2px;
-    margin-right: 6px 0;
-    background-color: #212526; }
+  header label {
+    display: none;
+    height: fit-content;
+    cursor: pointer;
+    padding: 3px 8px;
+    border-radius: 5px;
+    transition: 0.2s; }
+    header label:hover {
+      background: #8873ec; }
+    header label div {
+      width: 30px;
+      height: 2px;
+      margin-right: 6px 0;
+      background-color: #212526; }
 
 body {
   /*background-image: url(https://images.unsplash.com/photo-1550275994-cdc89cd1948f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8YmFja2dyb3VuZCUyMGRhbnphfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60);*/
@@ -383,17 +391,17 @@ footer {
     top: 0;
     left: 0;
     position: absolute;
-    width: 70px;
+    width: 20%;
     height: 100vh;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
     align-content: flex-start;
     justify-content: flex-start;
-    background-color: rgba(245, 245, 245, 0.941);
+    background-color: whitesmoke;
     /*flex-direction: column;
-        box-sizing: content-box;
-        height:fit-content;*/ }
+            box-sizing: content-box;
+            height:fit-content;*/ }
     header div img {
       display: none; }
   nav {
@@ -410,7 +418,7 @@ footer {
       justify-content: flex-start; }
   nav a {
     color: black;
-    margin: 0; }
+    margin:  0; }
   h1 {
     margin-top: 20px;
     margin-left: 200px; }
@@ -437,13 +445,11 @@ footer {
     footer .grupo-1 .box p {
       margin: auto;
       align-items: center;
-      align-content: center; } }
-
-.clases {
-  flex-direction: column; }
-
-.fechas {
-  width: 70%; }
+      align-content: center; }
+  .clases {
+    flex-direction: column; }
+  .fechas {
+    width: 70%; } }
 
 @media (max-width: 425px) {
   footer .grupo-1 figure img {

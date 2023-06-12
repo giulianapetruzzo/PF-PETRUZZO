@@ -6,21 +6,28 @@ header{
     display: flex;
     align-items:center;
     justify-content:space-between;
-    padding:0 40px ;
+    padding:0 40px;
     border-radius: 0 0 10px 10px;
-    margin: auto;
+    margin: 0 auto;
     /*padding:30px;*/
     nav {
         ul{
             display: flex;
                 a{
-                    text-decoration: none;
+                    display: block;
+                    color: #212526;
+                    margin: 0 2px;
+                    font-weight: 600;
+                    padding: 8px 18px;
+                    transition: 0.2s;
+                    border-radius: 30px;
+                    /*text-decoration: none;
                     color: black;
                     margin: 0 2px;
                     font-size: medium;
                     padding: 8px 18px;
                     transition: 0.2s;
-                    border-radius: 30px;
+                    border-radius: 30px;*/
                 &:hover{
                     color: rgb(249, 8, 8);
                     font-size: larger;
@@ -38,21 +45,22 @@ header{
         margin-right: 10px;
         margin-bottom: 10px;
     }
-    }
-    .hamburguesa{
+    label{
     display: none;
     height: fit-content;
     cursor: pointer;
     padding: 3px 8px;
     border-radius: 5px;
     transition: 0.2s;
-    &:hover{
-        background:#f6f4ff;
+        &:hover{
+        background:#8873ec;
     }
-    div{
+        div{
         width:30px ;
         height: 2px;
         margin-right: 6px 0 ;
         background-color: #212526;
+        }
     }
-    }
+}        
+

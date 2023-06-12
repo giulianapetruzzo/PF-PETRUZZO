@@ -1,47 +1,47 @@
 @media(max-width:768px) {
-    header {
-        top: 0;
-        left: 0;
-        position: absolute;
-        width: 70px;
-        height: 100vh;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
-        align-content: flex-start;
-        justify-content: flex-start;
-        background-color: rgba(245, 245, 245, 0.941);
-
-        /*flex-direction: column;
-        box-sizing: content-box;
-        height:fit-content;*/
-
-        div {
-            img {
-                display: none;
-            }
-        }
-    }
-
-    nav {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
-        align-content: flex-start;
-        justify-content: flex-start;
-
-        ul {
+        header {
+            top: 0;
+            left: 0;
+            position: absolute;
+            width: 20%;
+            height: 100vh;
             display: flex;
             flex-direction: column;
             flex-wrap: nowrap;
-            align-items: flex-start;
+            align-content: flex-start;
             justify-content: flex-start;
+            background-color: rgb(245, 245, 245);
+    
+            /*flex-direction: column;
+            box-sizing: content-box;
+            height:fit-content;*/
+    
+            div {
+                img {
+                    display: none;
+                }
+            }
         }
-    }
-
-    nav a {
-        color: rgb(0, 0, 0);
-        margin: 0;
+    
+        nav {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            align-content: flex-start;
+            justify-content: flex-start;
+    
+            ul {
+                display: flex;
+                flex-direction: column;
+                flex-wrap: nowrap;
+                align-items: flex-start;
+                justify-content: flex-start;
+            }
+        }
+    
+        nav a {
+            color: rgb(0, 0, 0);
+            margin: 0;
     }
 
     h1 {
@@ -93,7 +93,7 @@
             }
                 }
             }
-        }
+        
     
 
 
@@ -104,4 +104,4 @@
     .fechas {
         width: 70%;
     }
-
+}
