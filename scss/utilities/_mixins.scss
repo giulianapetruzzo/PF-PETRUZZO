@@ -8,3 +8,11 @@
     align-items:$items;
     gap: $gap;
 }
+
+@mixin grid($col,$rows,$areas,$gap){
+    display: grid;
+    grid-template-columns:$col ;
+    grid-template-rows: $rows;
+    grid-template-areas:$areas ;
+    gap: $gap;
+}

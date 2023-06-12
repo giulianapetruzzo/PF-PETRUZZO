@@ -31,7 +31,7 @@
     }
     .sabados2 div{
         width: 500px;
-        box-shadow: 0 4px 8px 0 rgb(203, 214, 5),0 6px 20px 0 rgb(122, 1255, 186);
+        box-shadow: 3px 4px 8px 3px rgb(203, 214, 5),3px 6px 20px 3px rgb(122, 1255, 186);
         padding-inline: 60px;
         text-align: center;
         h2:hover{
@@ -40,8 +40,10 @@
             font-family: fantasy;
         }
         h3:hover{
-            color:cornsilk;
-            font-size: larger;
+            @extend h2;
+            font-family:none;
+            /*color:cornsilk;
+            font-size: larger;*/
         }
     }
 
@@ -52,6 +54,6 @@
         padding: 20px;
         width:70%;
         object-fit: cover;
-        box-shadow: 0 4px 8px 0 rgb(214, 85, 5),0 6px 20px 0 rgb(122, 1255, 186);
+        box-shadow: 3px 4px 8px 3px rgb(214, 85, 5),3px 6px 20px 3px rgb(122, 1255, 186);
     }
 }
