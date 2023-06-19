@@ -35,7 +35,8 @@ header {
     margin-block-end: 0.67em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
-    font-weight: bold; }
+    font-weight: bold;
+    }
   header .navegacion a {
     font-weight: 600;
     padding-right: 10px;
@@ -55,6 +56,13 @@ body {
   body main {
     box-sizing: content-box; }
     body main h1 {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: no-wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 10pxs;
+      font-size: 35px;
       text-align: center;
       color: aliceblue;
       margin-top: 20px;
@@ -413,7 +421,6 @@ footer {
   header {
     top: 0;
     left: 0;
-    position: absolute;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -451,8 +458,7 @@ footer {
     }
 */
   h1 {
-    margin-top: 50px;
-    margin-left: 200px; }
+    margin-top: 190px; }
   /*.gallery {
         margin-left: 200px;
 
@@ -470,7 +476,6 @@ footer {
   .equipo {
     display: flex;
     flex-direction: column;
-    margin-top: 190px;
     justify-content: center;
     align-items: center;
     gap: 5px; }
@@ -484,21 +489,18 @@ footer {
     align-items: center;
     align-content: center; }
     .eventos div h1 {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-items: center;
-      font-size: 70px;
-      text-align: center;
-      color: aliceblue;
-      margin-top: 190px;
-      padding: 30px; }
+      display: none; }
   .slider {
     display: none; }
   .clases {
     flex-direction: column; }
   .fechas {
-    width: 70%; } }
+    width: 100%; }
+  form h2, form .clases .sabados2 div h3:hover, .clases .sabados2 div form h3:hover {
+    color: aliceblue;
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 20px; } }
 
 @media (max-width: 425px) {
   footer .grupo-1 figure img {
@@ -511,6 +513,8 @@ footer {
     margin-right: 250px; }
   .clases {
     flex-direction: column; }
+    .clases div h1 {
+      display: none; }
   h1 {
     display: none; }
   .gallery {
@@ -521,28 +525,35 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    align-content: center; } }
+    align-content: center;
+    flex-direction: row;
+    flex-wrap: wrap; } }
 
 @media (max-width: 320px) {
-  /*header{
-        width: 30px;
-        height: 100vh;
-        nav{
-            ul{
-                a{
-                    font-size: 16px;
-                    margin-left: 0;
-                    align-items: flex-start;
-                    align-content: flex-start;
-                }
-            }
-        }
-    }*/
+  header {
+    width: 100%;
+    height: 100%;
+    position: static; }
+    header nav ul a {
+      font-size: 16px;
+      margin-left: 0;
+      align-items: flex-start;
+      align-content: flex-start; }
+  body main h1 {
+    display: none; }
   .gallery {
+    display: none; }
+  .clases .sabados2 div h1 {
     display: none; }
   .clases .sabados2 div h2, .clases .sabados2 div h3:hover {
     font-size: 16px; }
   .clases .sabados2 div h3 {
     font-size: 16px; }
   .video {
-    display: none; } }
+    display: none; }
+  form {
+    width: 100%;
+    height: 100%; }
+  footer {
+    margin-left: 10px;
+    margin-right: 10px; } }

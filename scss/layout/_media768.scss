@@ -2,7 +2,6 @@
         header {
                 top: 0;
                 left: 0;
-                position: absolute;
                 display: flex;
                 flex-direction: column;
                 flex-wrap: nowrap;
@@ -44,7 +43,6 @@
 */
     h1 {
         margin-top: 190px;
-        margin-left: 200px;
     }
 
     /*.gallery {
@@ -65,7 +63,6 @@
 .equipo{
     display: flex;
     flex-direction: column;
-    margin-top: 190px;
     justify-content: center;
     align-items: center;
     gap: 5px;
@@ -82,15 +79,7 @@
     align-content: center;
     div{
         h1{
-            display: flex;
-    flex-direction: row;
-            justify-content: center;
-            align-items: center;
-            font-size: 70px;
-    text-align: center;
-    color: aliceblue;
-    margin-top: 190px;
-    padding: 30px;
+           display: none;
         }
     }
 }
@@ -103,13 +92,13 @@
     }
 
     .fechas {
-        width: 70%;
+        width: 100%;
     }
     form{
         h2{
             color: aliceblue;
     text-align: center;
-            margin-top: 190px;
+            
     font-size: 30px;
     margin-bottom: 20px;
         }
