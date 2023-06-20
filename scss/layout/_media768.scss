@@ -67,9 +67,7 @@
     align-items: center;
     gap: 5px;
 }
-    video {
-        display: none;
-    }
+    
 .eventos{
     width: 100%;
     height: 100%;
@@ -89,6 +87,9 @@
 
     .clases {
         flex-direction: column;
+        video {
+            display: none;
+        }
     }
 
     .fechas {
