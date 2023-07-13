@@ -9,32 +9,27 @@
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; }
 
 body {
-  /*background-image: url(https://images.unsplash.com/photo-1550275994-cdc89cd1948f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8YmFja2dyb3VuZCUyMGRhbnphfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60);*/
-  background-image: linear-gradient(90deg, #240006 0%, #ff0d43 35%, #000108 100%);
-  background-size: 100vw 100vh;
+  background-image: url(https://images.unsplash.com/photo-1550275994-cdc89cd1948f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8YmFja2dyb3VuZCUyMGRhbnphfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60);
+  /*background-image: $background-image2;*/
+  /*overflow-x: hidden;*/
+  /*overflow-y: hidden;*/
+  /*background-size: 100vw 100vh;*/
   background-attachment: fixed;
   background-repeat: no-repeat;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; }
   body main {
-    box-sizing: content-box;
-    overflow-x: hidden;
-    overflow-y: hidden;
-    }
+    box-sizing: content-box; }
 
 header {
   display: flex;
   width: 100%;
   height: 30%;
+  justify-content: space-between;
   background-color: #e8ebefce;
   align-items: center;
   padding: 10px;
   color: #e6dcdc;
-  font-size: 16px;
-  align-content: center;
-  flex-wrap: nowrap;
-  flex-direction: column;
-  justify-content: center;
-  }
+  font-size: 16px; }
   header .logotipo {
     display: block;
     font-size: 2em;
@@ -42,8 +37,7 @@ header {
     margin-block-end: 0.67em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
-    font-weight: bold;
-    }
+    font-weight: bold; }
   header .navegacion a {
     font-weight: 600;
     padding-right: 10px;
@@ -53,71 +47,61 @@ header {
     header .navegacion a:hover {
       color: red; }
 
-body {
-  /*background-image: url(https://images.unsplash.com/photo-1550275994-cdc89cd1948f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8YmFja2dyb3VuZCUyMGRhbnphfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60);*/
-  background-image: linear-gradient(90deg, #240006 0%, #ff0d43 35%, #000108 100%);
-  background-size: 100vw 100vh;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; }
-  body main {
-    box-sizing: content-box;
-    overflow-x: hidden;
-    overflow-y: hidden;
-    }
-    body main h1 {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: no-wrap;
-      justify-content: center;
-      align-items: center;
-      gap: 10pxs;
-      font-size: 35px;
-      text-align: center;
+main h1 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: no-wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10pxs;
+  font-size: 35px;
+  text-align: center;
+  color: aliceblue;
+  margin-top: 20px;
+  padding: 30px; }
+
+main .gallery {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  flex-direction: row;
+  flex-wrap: wrap; }
+  main .gallery .galeria {
+    margin: 7px 7px 7px 7px;
+    box-shadow: 0 4px 8px 0 lightsalmon, 0 6px 20px 0 black;
+    width: 350px;
+    display: flex;
+    float: left;
+    align-items: center;
+    justify-content: space-around;
+    padding: 5px; }
+    main .gallery .galeria:hover {
+      border: auto solid lightblue; }
+    main .gallery .galeria img {
+      width: 320px;
+      height: 300px;
+      object-fit: cover;
+      filter: brightness(78%); }
+      main .gallery .galeria img:hover {
+        filter: brightness(100%); }
+    main .gallery .galeria .pie-de-foto {
       color: aliceblue;
-      margin-top: 20px;
-      padding: 30px; }
-    body main .gallery {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: center;
-      align-items: center;
-      gap: 15px;
-      flex-direction: row;
-      flex-wrap: wrap; }
-      body main .gallery .galeria {
-        margin: 7px 7px 7px 7px;
-        box-shadow: 0 4px 8px 0 lightsalmon, 0 6px 20px 0 black;
-        width: 350px;
-        display: flex;
-        float: left;
-        align-items: center;
-        justify-content: space-around;
-        padding: 5px; }
-        body main .gallery .galeria:hover {
-          border: auto solid lightblue; }
-        body main .gallery .galeria img {
-          width: 320px;
-          height: 300px;
-          object-fit: cover;
-          filter: brightness(78%); }
-          body main .gallery .galeria img:hover {
-            filter: brightness(100%); }
-        body main .gallery .galeria .pie-de-foto {
-          color: aliceblue;
-          position: absolute; }
-    body main .historia {
-      display: inline-grid;
-      text-align: center;
-      justify-content: center;
-      color: aliceblue;
-      margin-bottom: 70px;
-      padding: 30px;
-      margin-top: 70px;
-      font-size: 20px; }
-      body main .historia strong {
-        color: #1b2572; }
+      position: absolute; }
+
+main .historia {
+  display: inline-grid;
+  text-align: center;
+  justify-content: center;
+  color: aliceblue;
+  margin-bottom: 70px;
+  padding: 30px;
+  margin-top: 70px;
+  font-size: 20px; }
+  main .historia strong {
+    color: #1b2572; }
 
 .clases {
   width: 450px;
@@ -170,7 +154,7 @@ body {
   .clases .video {
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: no-wrap;
     justify-content: center;
     align-items: center;
     gap: 10px;
@@ -179,8 +163,7 @@ body {
     padding: 20px;
     width: 70%;
     object-fit: cover;
-    box-shadow: 3px 4px 8px 3px #d65505, 3px 6px 20px 3px #7affba;
-    }
+    box-shadow: 3px 4px 8px 3px #d65505, 3px 6px 20px 3px #7affba; }
 
 .equipo {
   display: flex;
@@ -262,8 +245,8 @@ body {
   .eventos .fechas {
     display: flex;
     flex-direction: row;
-    flex-wrap: no-wrap;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
     gap: 30px;
     background-size: contain;
@@ -320,9 +303,7 @@ footer {
   width: 100%;
   height: 30%;
   background-color: rgba(245, 245, 220, 0.455);
-  border-radius: 0 0 10px 10px;
-  /* margin: 10px 20px 10px 20px; */
-  }
+  border-radius: 0 0 10px 10px; }
   footer div {
     display: flex;
     justify-content: center;
@@ -491,8 +472,6 @@ footer {
     justify-content: center;
     align-items: center;
     gap: 5px; }
-  video {
-    display: none; }
   .eventos {
     width: 100%;
     height: 100%;
@@ -506,6 +485,8 @@ footer {
     display: none; }
   .clases {
     flex-direction: column; }
+    .clases video {
+      display: none; }
   .fechas {
     width: 100%; }
   form h2, form .clases .sabados2 div h3:hover, .clases .sabados2 div form h3:hover {
@@ -526,6 +507,8 @@ footer {
   .clases {
     flex-direction: column; }
     .clases div h1 {
+      display: none; }
+    .clases video {
       display: none; }
   h1 {
     display: none; }
