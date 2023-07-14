@@ -45,7 +45,9 @@
         height: 100%;
     }
     footer{
-        margin-left: 10px;
-        margin-right: 10px;
+        .red-social-box {
+            flex-direction: column;
+            padding: 8px;
+        }
     }
 }
